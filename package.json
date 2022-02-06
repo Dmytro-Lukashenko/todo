@@ -1,0 +1,37 @@
+{
+  "name": "todo-or-not-todo",
+  "version": "1.0.0",
+  "description": "Todo or not Todo application is produced with:\r 1.HTML\r 2.CSS\r 3.JS\r 4.Google-fonts: 'Poppins'\r 5.Font Awesome (cdnjs)\r 6.Node.js\r 7 Web-pack",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development",
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "author": "Dmitry Lukashenko",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.8.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "mini-css-extract-plugin": "^2.5.3",
+    "prettier": "^2.5.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
